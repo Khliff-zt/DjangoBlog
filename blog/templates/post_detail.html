@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{post.title}}</title>
+    <link rel="stylesheet" href="{% static "blog/style.css" %}">
+</head>
+<body>
+    <div class="container">
+    <h1>{{post.title}}</h1>
+            <li>Post Title : {{post.title}}</li>
+            <li>Post Content: {{post.content}}</li> 
+    <a href="{% url "post_update" post.pk %}">Update This Post</a><br>
+    <a href="{% url "post_delete" post.pk%}">Delete This Post</a><br>
+    <a href="{% url "homepage" %}"> Back To Home</a>
+</div>
+</body>
+</html> 

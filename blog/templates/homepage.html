@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post | Home Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
+</head>
+<body>
+    <h1>Posts Available</h1>
+    <div class="container"> 
+    {% if available_posts %}
+        <ol style="list-style: none;">
+            {% for post in available_posts %}
+                <li>
+                    <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
+                </li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <p>No posts available.</p>
+    {% endif %}
+
+    <a href="{% url "post_create" %}">Add New Post</a> <br>
+    <p>Go To <a href="admin">Admin Panel</a></p>
+</div>
+</body>
+</html>
