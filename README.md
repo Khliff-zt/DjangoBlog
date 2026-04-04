@@ -1,6 +1,6 @@
-# Django Blog
+# Blog App
 
-Django Blog is a simple blog application built with Django. It allows users to view blog posts. The project aims to provide a minimal yet extendable blog system that anyone can use
+Blog App is a simple blog application built with Django. It allows users to view blog posts. The project aims to provide a minimal yet extendable blog system that anyone can use
 
 ## Features
 
