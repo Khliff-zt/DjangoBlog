@@ -13,4 +13,5 @@ Blog App is a simple blog application built with Django. It allows users to view
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/Khliff-zt/DjangoBlog.git
+git clone https://github.com/cleven12/blog_app.git
+```
